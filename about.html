@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2ffb1;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .content {
+            background-color: #ffda76;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+            color: #666;
+        }
+
+        .nav {
+            display: none;
+            margin-bottom: 20px;
+        }
+
+        .nav a {
+            display: block;
+            padding: 10px;
+            background-color: #333;
+            color: #db8888;
+            text-decoration: none;
+            border-radius: 4px;
+            margin-bottom: 5px;
+        }
+
+        @media only screen and (max-width: 600px) {
+            .container {
+                padding: 10px;
+            }
+
+            .nav {
+                display: block;
+            }
+
+            .nav.active {
+                display: block;
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="about.css">
+</head>
+<header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="project.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>About Us</h1>
+        </div>
+        <nav class="nav" id="nav">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="#">Services</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        <div class="content">
+            <p>•
+                <strong>UNDERGRADUATE STUDENT</strong><br>• To become a successful information technology professional
+                by utilizing my skills, and to further my personal and professional development while contributing
+                towards the growth and prosperity
+                of the organization.
+
+            </p>
+            <h3>
+                <strong>•Education</strong>
+            </h3>
+            <p>
+                <p1><strong>I. Padua High School
+            Mankhurd East, Mumbai Suburban, Maharashtra,India </strong></em>March 2020. <br><br>
+           <strong>II. AFAC Junior College of Science & Commerce GED</strong><em> St Anthonys Road, Chembur,
+                    Mumbai, Maharashtra 400088</em> May 2024 to June 2024. <br>
+                    High School Diploma. <br><br>
+                <strong>III. Bhavna Trust Junior & Degree College of Commerce & Bachelor of Science: Information Technology
+                </strong>Currently pursuing Degree in Third Year of Bacheolor in Information Technology.
+                <em>Plot No. 5,Sunder Baug, Raje Shivaji Chowk, Mumbai</em> Expected in 2022-2025. m<br><br>   
+            </p>
+            <h3>•Professional Experience</h3>
+            <p><strong>PRODIGY INFOTECH</strong><br> Web Developer Intern : <br>
+                <p1>
+                    <em>Developed web applications using HTML, CSS and JavaScript. Tested and debugged code for
+                        compatibility across multiple browsers. • Optimized website performance by implementing caching
+                        techniques. • Performed cross-browser
+                        compatibility testing on all webpages before launch. Implemented responsive design principles to
+                        ensure websites are mobile friendly. Integrated APIs into websites to enable dynamic content
+                        delivery from third-party sources. Maintained
+                        version control systems such as Git or SVN to track changes in codebase over time. Utilized
+                        tools such as Chrome DevTools to troubleshoot problems with website functionality. Location :
+                        Parel Lockseva, Worli, D, Gandhi Nagar, Upper
+                        Worli, Mumbai, Maharashtra 400018, IN </em>
+                </p1>
+            </p>
+        </div>
+        <div class="footer">
+            <p>&copy; 2024 DigitalDiveMoiz. All rights reserved..</p>
+            <!-- Add social media icons/links here -->
+            <div class="row">
+                <div class="column">
+                    <a href="https://www.linkedin.com/in/mohammed-moiz-884853244/"><img src="images\linkedin.png" style="width:20%"> </a>
+                </div>
+                <div class="column">
+                    <a href="https://www.instagram.com/mohammed_moiz14/"><img src="images\instagram.png" style="width:19%"> </a>
+                </div>
+                <div class="column">
+                    <a href="https://www.facebook.com/succy.sll"><img src="images\facebook.png" style="width:19%"> </a>
+                </div>
+                <div class="column">
+                    <a href="https://x.com/iammohammedmoiz/"><img src="images\twitter.png" style="width:19%"> </a>
+                </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var nav = document.getElementById("nav");
+            document.getElementById("nav-toggle").addEventListener("click", function () {
+                nav.classList.toggle("active");
+            });
+        });
+    </script>
+</body>
+
+</html>

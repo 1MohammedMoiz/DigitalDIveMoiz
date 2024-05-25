@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2ffb1;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        
+        .content {
+            background-color: #ffda76;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+            color: #666;
+        }
+        
+        .nav {
+            display: none;
+            margin-bottom: 20px;
+        }
+        
+        .nav a {
+            display: block;
+            padding: 10px;
+            background-color: #333;
+            color: #db8888;
+            text-decoration: none;
+            border-radius: 4px;
+            margin-bottom: 5px;
+        }
+        
+        @media only screen and (max-width: 600px) {
+            .container {
+                padding: 10px;
+            }
+            .nav {
+                display: block;
+            }
+            .nav.active {
+                display: block;
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="contact.css">
+</head>
+<header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="project.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Contact</h1>
+        </div>
+        <nav class="nav" id="nav">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="">Services</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        <div class="content">
+            <h2>Contact Me</h2>
+            <form action="#" method="POST">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+        <div class="footer">
+            <p>&copy; 2024 DigitalDiveMoiz. All rights reserved..</p>
+        <!-- Add social media icons/links here -->
+        <div class="row">
+            <div class="column">
+                <a href="https://www.linkedin.com/in/mohammed-moiz-884853244/"><img src="images\linkedin.png" style="width:20%"> </a>
+            </div>
+            <div class="column">
+                <a href="https://www.instagram.com/mohammed_moiz14/"><img src="images\instagram.png" style="width:19%"> </a>
+            </div>
+            <div class="column">
+                <a href="https://www.facebook.com/succy.sll"><img src="images\facebook.png" style="width:19%"> </a>
+            </div>
+            <div class="column">
+                <a href="https://x.com/iammohammedmoiz/"><img src="images\twitter.png" style="width:19%"> </a>
+            </div>    
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var nav = document.getElementById("nav");
+            document.getElementById("nav-toggle").addEventListener("click", function() {
+                nav.classList.toggle("active");
+            });
+        });
+    </script>
+</body>
+
+</html>

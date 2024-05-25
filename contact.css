@@ -1,0 +1,112 @@
+/* Header styles */
+
+header {
+    background-color: #557138;
+    color: #fff;
+    padding: 10px 0;
+}
+
+header nav ul {
+    list-style-type: none;
+    margin: 40;
+    padding: 500;
+    align-items: 305px;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    text-align: center;
+    /* Center the navigation bar horizontally */
+}
+
+
+/* Align text vertically in the middle */
+
+li a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 20px;
+    /* Adjust the height of the menu items */
+}
+
+li a {
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    color: #6ce59e;
+    /* Initial font color */
+    transition: color 0.3s ease;
+    /* Smooth color transition */
+    font-size: large;
+}
+
+li a:hover {
+    color: #a900bc;
+    /* Font color on hover */
+    background-color: #333;
+    /* Background color on hover */
+}
+
+li a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background-color: #333;
+    transition: width 0.3s ease;
+    /* Smooth width transition */
+}
+
+li a:hover::after {
+    width: 100%;
+    /* Expand the pseudo-element on hover */
+}
+ /* Footer styles */
+                
+ footer {
+    background-color: #557138;
+    color: #fff;
+    text-align: center;
+    padding: 0px 0;
+}
+/* socials here*/
+                /* Three image containers (use 25% for four, and 50% for two, etc) */
+                
+                .column {
+                    float: left;
+                    width: 15.33%;
+                    padding: 0px;
+                    display:contents;
+                }
+                /* Clear floats after image containers */
+                
+                .row::after {
+                    content: "";
+                    clear: both;
+                    display: table;
+                }
+                
+                .row {
+                    display: flex;
+                }
+                
+                .column {
+                    flex: 15.33%;
+                    padding: 0px;
+                }

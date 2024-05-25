@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2ffb1;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        
+        .content {
+            background-color: #ffda76;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+            color: #666;
+        }
+        
+        .nav {
+            display: none;
+            margin-bottom: 20px;
+        }
+        
+        .nav a {
+            display: block;
+            padding: 10px;
+            background-color: #333;
+            color: #db8888;
+            text-decoration: none;
+            border-radius: 4px;
+            margin-bottom: 5px;
+        }
+        
+        @media only screen and (max-width: 600px) {
+            .container {
+                padding: 10px;
+            }
+            .nav {
+                display: block;
+            }
+            .nav.active {
+                display: block;
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="project.css">
+</head>
+<header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="project.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="services.html">Services</a></li>
+        </ul>
+    </nav>
+</header>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Projects</h1>
+        </div>
+        <nav class="nav" id="nav">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        <div class="content">
+            <h2>Projects</h2>
+            <div class="project">
+                <h3>I. RESPONSIVE-LANDING-PAGE</h3>
+                <p>
+                    A responsive landing page adjusts seamlessly to any device, ensuring an optimal viewing experience. With fluid layouts and flexible elements, it captivates visitors and drives conversions across desktops, laptops, tablets, and smartphones.</p>
+                    <a href="https://navigationdive.netlify.app/"><img src="images\Screenshot_13-5-2024_21015_.jpeg" alt="Project Screenshot" width="80%" height="200px"></a>
+                <a href="https://github.com/1Mohammed-Moiz/PRODIGY_WD_01.git" class="project-link">
+                    <br>View Demo</a>
+            </div>
+            <!-- Add more projects here -->
+            <h3>II. STOP-WATCH App</h3>
+            <p>"Stopwatch App: A lightweight, user-friendly stopwatch application built with [insert programming language/framework]. Track time with precision, featuring start, stop, and reset functionality. Easily integrate into your projects or use standalone.
+                Simplify time management with our intuitive interface. Download now and boost your productivity!"</p>
+           <a href="https://stopwatch-dive.netlify.app/"> <img src="images\Screenshot_13-5-2024_21035_.jpeg" alt="Project Screenshot" width="80%" height="200px"></a>
+            <a href="https://github.com/1Mohammed-Moiz/PRODIGY_WD_02.git" class="project-link">
+                <br>View Demo</a>
+            <!-- Add more projects here -->
+            <h3>III. TIC-TAC-TOE web application</h3>
+            <p>"TIC-TAC-TOE web application users can play against each other or against an AI opponent, aiming to get three markers in a row to win the game."</p>
+            <a href="https://tic-tac-toe-dive.netlify.app/"><img src="images\Screenshot_13-5-2024_2110_.jpeg" alt="Project Screenshot" width="80%" height="200px"></a>
+            <a href="https://github.com/1Mohammed-Moiz/PRODIGY_WD_03.git" class="project-link">
+                <br>View Demo</a>
+            <!-- Add more projects here -->
+            <h3>IV. WEATHER web application</h3>
+            <p>"Web Application that fetches weather data from a weather API based on the user's location or a user-inputted location. Display the current weather conditions, temperature, and other relevant information."</p>
+            <a href="https://weather-dive.netlify.app/"><img src="images\Screenshot_16-5-2024_33818_127.0.0.1.jpeg" alt="Project Screenshot" width="80%" height="200px"></a>
+            <a href="https://github.com/1Mohammed-Moiz/PRODIGY_WD_05.git" class="project-link">
+                <br>View Demo</a>
+        </div>
+        <div class="footer">
+            <p>&copy; 2024 DigitalDiveMoiz. All rights reserved.</p>
+            <!-- Add social media icons/links here -->
+            <div class="row">
+                <div class="column">
+                    <a href="https://www.linkedin.com/in/mohammed-moiz-884853244/"><img src="images\linkedin.png" style="width:20%"> </a>
+                </div>
+                <div class="column">
+                    <a href="https://www.instagram.com/mohammed_moiz14/"><img src="images\instagram.png" style="width:19%"> </a>
+                </div>
+                <div class="column">
+                    <a href="https://www.facebook.com/succy.sll"><img src="images\facebook.png" style="width:19%"> </a>
+                </div>
+                <div class="column">
+                    <a href="https://x.com/iammohammedmoiz/"><img src="images\twitter.png" style="width:19%"> </a>
+                </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var nav = document.getElementById("nav");
+            document.getElementById("nav-toggle").addEventListener("click", function() {
+                nav.classList.toggle("active");
+            });
+        });
+    </script>
+</body>
+
+</html>
